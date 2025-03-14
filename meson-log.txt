@@ -1,0 +1,931 @@
+Build started at 2025-03-14T23:19:34.149730
+Main binary: /usr/bin/python3
+Build Options: -Dprefix=/usr
+Python system: Linux
+The Meson build system
+Version: 1.7.0
+Source dir: /home/kkk/Desktop/apps/gitg
+Build dir: /home/kkk/Desktop/apps/gitg/build
+Build type: native build
+Project name: gitg
+Project version: 45.alpha
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils for Ubuntu) 2.38
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 11.4.0
+/usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjVrvij.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/kkk/Desktop/apps/gitg/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils for Ubuntu) 2.38
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `valac --version` -> 0
+stdout:
+Vala 0.56.0
+-----------
+Running compile:
+Working directory:  /tmp/tmp1prci5yy
+Code:
+class MesonSanityCheck : Object { }
+-----------
+Command line: `valac /tmp/tmp1prci5yy/testfile.vala -C` -> 0
+Vala compiler for the host machine: valac (valac 0.56.0)
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils for Ubuntu) 2.38
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 11.4.0
+/usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjaxKD4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/kkk/Desktop/apps/gitg/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the build machine: cc ld.bfd 2.38
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils for Ubuntu) 2.38
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `valac --version` -> 0
+stdout:
+Vala 0.56.0
+-----------
+Using cached compile:
+Cached command line:  valac /tmp/tmp1prci5yy/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Vala compiler for the build machine: valac (valac 0.56.0)
+Build machine cpu family: aarch64
+Build machine cpu: aarch64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpsg078bfk
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpsg078bfk/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpsg078bfk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=format=2` -> 0
+Compiler for C supports arguments -Werror=format=2: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmph8yn7n3l
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmph8yn7n3l/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmph8yn7n3l/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration` -> 0
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpfp77l77v
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpfp77l77v/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpfp77l77v/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=init-self` -> 0
+Compiler for C supports arguments -Werror=init-self: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmp4vqkigdk
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmp4vqkigdk/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmp4vqkigdk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-include-dirs` -> 0
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmprjkaf_3z
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmprjkaf_3z/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmprjkaf_3z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-prototypes` -> 0
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmp5k4bc1vu
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmp5k4bc1vu/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmp5k4bc1vu/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-arith` -> 0
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpxxonnhrr
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpxxonnhrr/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpxxonnhrr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=return-type` -> 0
+Compiler for C supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmprusrqdih
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmprusrqdih/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmprusrqdih/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations` -> 0
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpr4eim9nd
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpr4eim9nd/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpr4eim9nd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs` -> 0
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmp23m7t1x9
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmp23m7t1x9/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmp23m7t1x9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes` -> 0
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpaz3hedu1
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpaz3hedu1/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpaz3hedu1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wuninitialized` -> 0
+Compiler for C supports arguments -Wuninitialized: YES 
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpg2kartks
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpg2kartks/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpg2kartks/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--version-script,/home/kkk/Desktop/apps/gitg/libgitg.map` -> 0
+Compiler for C supports link arguments -Wl,--version-script,/home/kkk/Desktop/apps/gitg/libgitg.map: YES 
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Determining dependency 'libhandy-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libhandy-1` -> 0
+stdout:
+1.6.1
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libhandy-1` -> 0
+stdout:
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/webp -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libhandy-1
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libhandy-1` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lhandy-1 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libhandy-1` -> 0
+stdout:
+-lhandy-1 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpd5ij652g
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpd5ij652g/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpd5ij652g/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpcf815moj
+Code:
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmpcf815moj/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpcf815moj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/aarch64-linux-gnu/11/
+programs: =/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/11/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/11/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency libhandy-1 found: YES 1.6.1
+Determining dependency 'gee-0.8' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gee-0.8` -> 0
+stdout:
+0.20.5
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gee-0.8` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gee-0.8` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgee-0.8 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gee-0.8` -> 0
+stdout:
+-lgee-0.8 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gee-0.8 found: YES 0.20.5
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+stdout:
+2.82.5
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+stdout:
+-pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gio-2.0 found: YES 2.82.5
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+stdout:
+2.82.5
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-lglib-2.0
+-----------
+Run-time dependency glib-2.0 found: YES 2.82.5
+Determining dependency 'gobject-introspection-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gobject-introspection-1.0` -> 0
+stdout:
+1.82.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gobject-introspection-1.0` -> 0
+stdout:
+-I/usr/include/gobject-introspection-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gobject-introspection-1.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgirepository-1.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gobject-introspection-1.0` -> 0
+stdout:
+-lgirepository-1.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gobject-introspection-1.0 found: YES 1.82.0
+Determining dependency 'gsettings-desktop-schemas' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gsettings-desktop-schemas` -> 0
+stdout:
+42.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gsettings-desktop-schemas` -> 0
+stdout:
+-I/usr/include/gsettings-desktop-schemas
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gsettings-desktop-schemas` -> 0
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gsettings-desktop-schemas` -> 0
+Run-time dependency gsettings-desktop-schemas found: YES 42.0
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gtk+-3.0` -> 0
+stdout:
+3.24.48
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gtk+-3.0` -> 0
+stdout:
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/webp -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
+stdout:
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gtk+-3.0 found: YES 3.24.48
+Determining dependency 'gspell-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gspell-1` -> 0
+stdout:
+1.9.1
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gspell-1` -> 0
+stdout:
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/webp -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/gspell-1 -I/usr/include/enchant-2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gspell-1` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgspell-1 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lenchant-2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gspell-1` -> 0
+stdout:
+-lgspell-1 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lenchant-2
+-----------
+Run-time dependency gspell-1 found: YES 1.9.1
+Determining dependency 'gtksourceview-4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gtksourceview-4` -> 0
+stdout:
+4.8.3
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gtksourceview-4` -> 0
+stdout:
+-pthread -I/usr/include/libxml2 -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/webp -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/gtksourceview-4
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtksourceview-4` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgtksourceview-4 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtksourceview-4` -> 0
+stdout:
+-lgtksourceview-4 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gtksourceview-4 found: YES 4.8.3
+Determining dependency 'libgit2-glib-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libgit2-glib-1.0` -> 0
+stdout:
+1.2.1
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libgit2-glib-1.0` -> 0
+stdout:
+-DGIT_SSH=1 -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/include -I/usr/include/libgit2-glib-1.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libgit2-glib-1.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -L/usr/local/lib -L/usr/lib/aarch64-linux-gnu -lgit2-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgit2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libgit2-glib-1.0` -> 0
+stdout:
+-L/usr/local/lib -lgit2-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgit2
+-----------
+Run-time dependency libgit2-glib-1.0 found: YES 1.2.1
+Determining dependency 'libpeas-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libpeas-1.0` -> 0
+stdout:
+1.32.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libpeas-1.0` -> 0
+stdout:
+-pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gobject-introspection-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libpeas-1.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libpeas-1.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lpeas-1.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lgio-2.0 -lgirepository-1.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libpeas-1.0` -> 0
+stdout:
+-lpeas-1.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lgio-2.0 -lgirepository-1.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency libpeas-1.0 found: YES 1.32.0
+Determining dependency 'libsecret-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libsecret-1` -> 0
+stdout:
+0.20.5
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libsecret-1` -> 0
+stdout:
+-pthread -I/usr/include/aarch64-linux-gnu -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libsecret-1
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libsecret-1` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lsecret-1 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libsecret-1` -> 0
+stdout:
+-lsecret-1 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency libsecret-1 found: YES 0.20.5
+Determining dependency 'libxml-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libxml-2.0` -> 0
+stdout:
+2.13.6
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libxml-2.0` -> 0
+stdout:
+-I/usr/include/libxml2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libxml-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lxml2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libxml-2.0` -> 0
+stdout:
+-lxml2
+-----------
+Run-time dependency libxml-2.0 found: YES 2.13.6
+Determining dependency 'json-glib-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion json-glib-1.0` -> 0
+stdout:
+1.10.6
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags json-glib-1.0` -> 0
+stdout:
+-pthread -I/usr/include/json-glib-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
+stdout:
+-ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency json-glib-1.0 found: YES 1.10.6
+Determining dependency 'gpgme' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gpgme` -> 0
+stdout:
+1.23.2
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gpgme` -> 0
+stdout:
+-I/usr/include/aarch64-linux-gnu
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gpgme` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgpgme
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gpgme` -> 0
+stdout:
+-lgpgme
+-----------
+Run-time dependency gpgme found: YES 1.23.2
+Library config found: YES
+Library gitg-platform-support found: YES
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmpp9r0_h8u
+Code:
+
+  #include <libgit2-glib/ggit.h>
+  int
+  main(int argc, const char *argv[])
+  {
+    ggit_init ();
+    return ((ggit_get_features () & GGIT_FEATURE_THREADS) != 0) ? 0 : 1;
+  };
+
+-----------
+Command line: `cc -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/include -I/usr/include/libgit2-glib-1.0 /home/kkk/Desktop/apps/gitg/build/meson-private/tmpp9r0_h8u/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmpp9r0_h8u/output.exe -DGIT_SSH=1 -pthread -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group /usr/lib/aarch64-linux-gnu/libgit2-glib-1.0.so /usr/lib/aarch64-linux-gnu/libgio-2.0.so /usr/lib/aarch64-linux-gnu/libgobject-2.0.so /usr/lib/aarch64-linux-gnu/libglib-2.0.so /usr/local/lib/libgit2.so -Wl,--end-group` -> 0
+Program stdout:
+
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/kkk/Desktop/apps/gitg/build/meson-private/tmp91fchoem
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc /home/kkk/Desktop/apps/gitg/build/meson-private/tmp91fchoem/testfile.c -o /home/kkk/Desktop/apps/gitg/build/meson-private/tmp91fchoem/output.exe -D_FILE_OFFSET_BITS=64 -O0 -lm -Wl,--allow-shlib-undefined` -> 0
+Library m found: YES
+Determining dependency 'gdk-3.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gdk-3.0` -> 0
+stdout:
+3.24.48
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gdk-3.0` -> 0
+stdout:
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/webp -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/pixman-1 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gdk-3.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gdk-3.0` -> 0
+stdout:
+-lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gdk-3.0 found: YES 3.24.48
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=targets gdk-3.0` -> 0
+stdout:
+wayland x11
+-----------
+Got pkg-config variable targets : wayland x11
+Program g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Library ide found: YES
+Dependency gio-2.0 found: YES 2.82.5 (cached)
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_resources gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-resources
+-----------
+Got pkg-config variable glib_compile_resources : /usr/bin/glib-compile-resources
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Determining dependency 'gio-unix-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gio-unix-2.0` -> 0
+stdout:
+2.82.5
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gio-unix-2.0` -> 0
+stdout:
+-pthread -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-unix-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /var/lib/flatpak/runtime/org.freedesktop.Sdk/aarch64/24.08/f3c710a3e534c4c287441fe56f2a256e9d1c4237f7175d33ff42b7d611cc338b/files/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-unix-2.0` -> 0
+stdout:
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gio-unix-2.0 found: YES 2.82.5
+Program python3 found: YES (/usr/bin/python3)
+Dependency gio-2.0 found: YES 2.82.5 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Running compile:
+Working directory:  /tmp/tmpr38mtji4
+Code:
+class MesonFindLibrary : Object { }
+-----------
+Command line: `valac /tmp/tmpr38mtji4/testfile.vala -C --pkg posix` -> 0
+Library posix found: YES
+Configuring gitg-resources.xml using configuration
+Dependency gio-2.0 found: YES 2.82.5 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring org.gnome.gitg.desktop.in using configuration
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Adding test "validate-desktop"
+Configuring org.gnome.gitg.gschema.xml using configuration
+Configuring org.gnome.gitg.appdata.xml.in using configuration
+Program appstream-util found: YES (/usr/bin/appstream-util)
+Adding test "validate-appdata"
+Program cp found: YES (/usr/bin/cp)
+Library gitg-assert found: YES
+Adding test "tests-libgitg"
+Adding test "tests-gitg"
+Configuring config.h using configuration
+Message: 
+Configuration:
+
+        Source code location:   /home/kkk/Desktop/apps/gitg
+        Compiler:               gcc
+        Glade catalog:          true
+        Debug enabled:          true
+        Python support:         true
+        Profile:                default
+
+Build targets in project: 79
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'dependency.get_pkgconfig_variable', 'gui_app arg in executable'}
+
+gitg 45.alpha
+
+  User defined options
+    prefix: /usr
+
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/Gitg-1.0.typelib
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/GitgExt-1.0.typelib
+Failed to guess install tag for /usr/share/applications/org.gnome.gitg.desktop
+Failed to guess install tag for /usr/share/metainfo/org.gnome.gitg.appdata.xml
+Failed to guess install tag for /usr/lib/python3/dist-packages/gi/overrides/GitgExt.py
+Failed to guess install tag for /usr/share/gitg/icons/hicolor/scalable/actions/diff-symbolic.svg
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/diff.plugin
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/files.plugin
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg.svg
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg-symbolic.svg
+Failed to guess install tag for /usr/share/glib-2.0/schemas/org.gnome.gitg.gschema.xml
+Failed to guess install tag for /usr/share/glade/catalogs/gitg-glade.xml
+Failed to guess install tag for install script: /home/kkk/Desktop/apps/gitg/meson_post_install.py gitg /usr/share
+Found ninja-1.12.2 at /usr/local/bin/ninja
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/Gitg-1.0.typelib
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/GitgExt-1.0.typelib
+Failed to guess install tag for /usr/share/applications/org.gnome.gitg.desktop
+Failed to guess install tag for /usr/share/metainfo/org.gnome.gitg.appdata.xml
+Failed to guess install tag for /usr/lib/python3/dist-packages/gi/overrides/GitgExt.py
+Failed to guess install tag for /usr/share/gitg/icons/hicolor/scalable/actions/diff-symbolic.svg
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/diff.plugin
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/files.plugin
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg.svg
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg-symbolic.svg
+Failed to guess install tag for /usr/share/glib-2.0/schemas/org.gnome.gitg.gschema.xml
+Failed to guess install tag for /usr/share/glade/catalogs/gitg-glade.xml
+Failed to guess install tag for install script: /home/kkk/Desktop/apps/gitg/meson_post_install.py gitg /usr/share
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/Gitg-1.0.typelib
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/girepository-1.0/GitgExt-1.0.typelib
+Failed to guess install tag for /usr/share/applications/org.gnome.gitg.desktop
+Failed to guess install tag for /usr/share/metainfo/org.gnome.gitg.appdata.xml
+Failed to guess install tag for /usr/lib/python3/dist-packages/gi/overrides/GitgExt.py
+Failed to guess install tag for /usr/share/gitg/icons/hicolor/scalable/actions/diff-symbolic.svg
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/diff.plugin
+Failed to guess install tag for /usr/lib/aarch64-linux-gnu/gitg/plugins/files.plugin
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg.svg
+Failed to guess install tag for /usr/share/icons/hicolor/scalable/apps/org.gnome.gitg-symbolic.svg
+Failed to guess install tag for /usr/share/glib-2.0/schemas/org.gnome.gitg.gschema.xml
+Failed to guess install tag for /usr/share/glade/catalogs/gitg-glade.xml
+Failed to guess install tag for install script: /home/kkk/Desktop/apps/gitg/meson_post_install.py gitg /usr/share
